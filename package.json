@@ -12,7 +12,11 @@
     "junit": "NODE_ENV=test mocha --reporter mocha-junit-reporter --exit --reporter-options mochaFile=./logs/junit.xml --require ts-node/register src/**/*.test.ts",
     "coverage": "NODE_ENV=test nyc mocha --reporter spec --exit --require ts-node/register src/**/*.test.ts"
   },
+  "dependencies": {
+    "amqplib": "^0.6.0"
+  },
   "devDependencies": {
+    "@types/amqplib": "^0.5.14",
     "@types/chai": "^4.2.13",
     "@types/mocha": "^8.0.3",
     "@types/node": "^14.11.5",
