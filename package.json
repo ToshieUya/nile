@@ -1,0 +1,58 @@
+{
+  "name": "nile",
+  "version": "1.0.0",
+  "description": "RabbitMQ Event and Command",
+  "main": "dist/index.js",
+  "repository": "https://github.com/ToshieUya/nile",
+  "author": "ToshieUya <toshie.uya@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc",
+    "test": "NODE_ENV=test mocha --reporter spec --exit --require ts-node/register src/**/*.test.ts",
+    "junit": "NODE_ENV=test mocha --reporter mocha-junit-reporter --exit --reporter-options mochaFile=./logs/junit.xml --require ts-node/register src/**/*.test.ts",
+    "coverage": "NODE_ENV=test nyc mocha --reporter spec --exit --require ts-node/register src/**/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.13",
+    "@types/mocha": "^8.0.3",
+    "@types/node": "^14.11.5",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "chai": "^4.2.0",
+    "eslint": "^7.10.0",
+    "mocha": "^8.1.3",
+    "mocha-junit-reporter": "^2.0.0",
+    "nyc": "^15.1.0",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0-pre.63",
+    "typescript": "^4.0.3"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "node_moduless",
+      "src/**/*.test.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "text-summary",
+      "html"
+    ],
+    "check-coverage": {
+      "lines": 90,
+      "branches": 90,
+      "functions": 100,
+      "statements": 90
+    },
+    "report-dir": "./logs",
+    "sourceMap": true,
+    "instrument": true
+  }
+}
