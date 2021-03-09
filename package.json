@@ -7,10 +7,7 @@
   "author": "ToshieUya <toshie.uya@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rm -rf ./dist && tsc",
-    "test": "NODE_ENV=test mocha --reporter spec --exit --require ts-node/register src/**/*.test.ts",
-    "junit": "NODE_ENV=test mocha --reporter mocha-junit-reporter --exit --reporter-options mochaFile=./logs/junit.xml --require ts-node/register src/**/*.test.ts",
-    "coverage": "NODE_ENV=test nyc mocha --reporter spec --exit --require ts-node/register src/**/*.test.ts"
+    "build": "rm -rf ./dist && tsc"
   },
   "dependencies": {
     "amqplib": "^0.6.0"
