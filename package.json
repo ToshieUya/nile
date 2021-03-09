@@ -1,6 +1,6 @@
 {
   "name": "@toshie.uya/nile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "RabbitMQ Event and Command",
   "main": "dist/index.js",
   "repository": "https://github.com/ToshieUya/nile",
