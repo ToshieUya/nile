@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "RabbitMQ Event and Command",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/ToshieUya/nile",
   "author": "ToshieUya <toshie.uya@gmail.com>",
   "license": "MIT",
