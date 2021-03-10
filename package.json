@@ -4,7 +4,7 @@
   "description": "RabbitMQ Event and Command",
   "main": "build/index.js",
   "types": "build/index.d.ts",
-  "repository": "https://github.com/ToshieUya/nile",
+  "repository": "https://github.com/ToshieUya/nile-amq",
   "author": "ToshieUya <toshie.uya@gmail.com>",
   "license": "MIT",
   "scripts": {
