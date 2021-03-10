@@ -1,5 +1,5 @@
 {
-  "name": "@toshie.uya/nile",
+  "name": "@toshie.uya/nile-amq",
   "version": "0.0.0",
   "description": "RabbitMQ Event and Command",
   "main": "build/index.js",
