@@ -2,8 +2,8 @@
   "name": "@toshie.uya/nile",
   "version": "1.0.2",
   "description": "RabbitMQ Event and Command",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
   "repository": "https://github.com/ToshieUya/nile",
   "author": "ToshieUya <toshie.uya@gmail.com>",
   "license": "MIT",
@@ -29,32 +29,7 @@
     "ts-node-dev": "^1.0.0-pre.63",
     "typescript": "^4.0.3"
   },
-  "nyc": {
-    "include": [
-      "src/**/*.ts"
-    ],
-    "exclude": [
-      "node_moduless",
-      "src/**/*.test.ts"
-    ],
-    "extension": [
-      ".ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
-    "reporter": [
-      "text-summary",
-      "html"
-    ],
-    "check-coverage": {
-      "lines": 90,
-      "branches": 90,
-      "functions": 100,
-      "statements": 90
-    },
-    "report-dir": "./logs",
-    "sourceMap": true,
-    "instrument": true
-  }
+  "files": [
+    "/build"
+  ]
 }
