@@ -1,6 +1,6 @@
 {
   "name": "@toshie.uya/nile",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "RabbitMQ Event and Command",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
